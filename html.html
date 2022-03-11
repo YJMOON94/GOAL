@@ -3,11 +3,70 @@
 <head>
   <title>practice modify</title>
   <meta charset=UTF-8>
+  <style>
+  #gird{
+    display:grid;
+    grid-template-columns: 200px 1fr;
+
+  }
+   a{
+    color:black;
+     text-decoration:none;
+   }
+   h1{
+     font-size: 55px;
+     text-align: center;
+     border-bottom:1px solid gray;
+     margin:0;
+     padding:30px;
+   }
+
+      #gird ol{
+     border-right : solid gray 1px;
+     width:110px;
+     margin:0;
+     font-size:25px;
+     padding:25px;
+     padding-left:60px;
+}
+body{
+  margin:0;
+}
+#article {
+  padding-left : 20px;
+}
+
+@media (max-width : 800px){
+
+  
+  #gird{
+    display: block;
+  }
+  #gird ol{
+ border-right : none;
+ width:110px;
+ margin:0;
+ font-size:25px;
+ padding:25px;
+ padding-left:60px;
+}
+h1{
+  font-size: 55px;
+  text-align: center;
+  border-bottom:none;
+  margin:0;
+  padding:30px;
+}
+}
+
+ </style>
+
 </head>
 
  <body>
-   <h1>Road become a developer
-     <ul>
+   <h1>Road become a developer</h1>
+     <div id="gird">
+     <ol>
 
       <li>
         <a href="Goals.html">Goals</a>
@@ -28,11 +87,18 @@
         <a href="C.html">C</a>
       </li>
 
-     </ul>
+    </ol>
+    <div id="article">
+     <p>
        기본 문법, 사진삽입, 동영상 삽입 학습<br>
-       <img src="coffee.jpg" width="100">
-       <video controls width="100">
+       <div id="video">
+         <img src="coffee.jpg" width="200">
+       <video controls width="200">
          <source src="IMG_3971.MOV">
+         </div>
        </video>
+     </p>
+   </div>
+   </div>
  </body>
 </html>
